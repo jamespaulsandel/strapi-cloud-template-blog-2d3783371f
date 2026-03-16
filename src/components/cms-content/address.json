@@ -5,9 +5,12 @@
   },
   "options": {},
   "attributes": {
+    "Remote": {
+      "type": "boolean"
+    },
     "Street": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "Unit": {
       "type": "string",
@@ -15,15 +18,15 @@
     },
     "City": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "State": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "ZipCode": {
       "type": "integer",
-      "required": true
+      "required": false
     }
   },
   "config": {}

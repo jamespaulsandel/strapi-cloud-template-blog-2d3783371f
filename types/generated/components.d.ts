@@ -6,11 +6,12 @@ export interface CmsContentAddress extends Struct.ComponentSchema {
     displayName: 'Address';
   };
   attributes: {
-    City: Schema.Attribute.String & Schema.Attribute.Required;
-    State: Schema.Attribute.String & Schema.Attribute.Required;
-    Street: Schema.Attribute.String & Schema.Attribute.Required;
+    City: Schema.Attribute.String;
+    Remote: Schema.Attribute.Boolean;
+    State: Schema.Attribute.String;
+    Street: Schema.Attribute.String;
     Unit: Schema.Attribute.String;
-    ZipCode: Schema.Attribute.Integer & Schema.Attribute.Required;
+    ZipCode: Schema.Attribute.Integer;
   };
 }
 
