@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_cms_content_organizations",
+  "info": {
+    "displayName": "Organization",
+    "icon": "house"
+  },
+  "options": {},
+  "attributes": {
+    "Common": {
+      "type": "component",
+      "component": "cms-content.common-fields",
+      "repeatable": false
+    },
+    "Locations": {
+      "type": "component",
+      "component": "cms-content.address",
+      "repeatable": true
+    },
+    "Phone": {
+      "type": "biginteger"
+    }
+  },
+  "config": {}
+}

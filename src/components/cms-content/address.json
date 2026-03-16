@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_cms_content_addresses",
+  "info": {
+    "displayName": "Address"
+  },
+  "options": {},
+  "attributes": {
+    "Street": {
+      "type": "string",
+      "required": true
+    },
+    "Unit": {
+      "type": "string",
+      "required": false
+    },
+    "City": {
+      "type": "string",
+      "required": true
+    },
+    "State": {
+      "type": "string",
+      "required": true
+    },
+    "ZipCode": {
+      "type": "integer",
+      "required": true
+    }
+  },
+  "config": {}
+}

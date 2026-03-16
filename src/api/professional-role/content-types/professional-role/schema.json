@@ -1,0 +1,87 @@
+{
+  "kind": "collectionType",
+  "collectionName": "professional_roles",
+  "info": {
+    "singularName": "professional-role",
+    "pluralName": "professional-roles",
+    "displayName": "Professional Role"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "Common": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "cms-content.common-fields",
+      "repeatable": false
+    },
+    "Start": {
+      "type": "date",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true
+    },
+    "End": {
+      "type": "date",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": false
+    },
+    "Company": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "cms-content.organization",
+      "repeatable": false
+    },
+    "Skills": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "cms-content.list",
+      "repeatable": true
+    },
+    "Responsibilites": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "cms-content.list",
+      "repeatable": true
+    },
+    "Accomplishments": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "cms-content.list",
+      "repeatable": true
+    }
+  }
+}
