@@ -517,7 +517,7 @@ export interface ApiProfessionalRoleProfessionalRole
       'api::professional-role.professional-role'
     >;
     publishedAt: Schema.Attribute.DateTime;
-    Responsibilites: Schema.Attribute.Component<'cms-content.list', true> &
+    Responsibilities: Schema.Attribute.Component<'cms-content.list', true> &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;

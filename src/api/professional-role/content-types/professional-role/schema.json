@@ -63,7 +63,7 @@
       "component": "cms-content.list",
       "repeatable": true
     },
-    "Responsibilites": {
+    "Responsibilities": {
       "type": "component",
       "pluginOptions": {
         "i18n": {
