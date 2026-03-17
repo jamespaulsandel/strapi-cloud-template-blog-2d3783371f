@@ -15,6 +15,16 @@
     }
   },
   "attributes": {
+    "Hero": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "cms-content.common-fields",
+      "repeatable": false
+    },
     "Common": {
       "type": "component",
       "pluginOptions": {

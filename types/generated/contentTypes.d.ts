@@ -511,6 +511,12 @@ export interface ApiProfessionalRoleProfessionalRole
           localized: true;
         };
       }>;
+    Hero: Schema.Attribute.Component<'cms-content.common-fields', false> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     locale: Schema.Attribute.String;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
