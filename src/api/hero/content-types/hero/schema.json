@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "heroes",
+  "info": {
+    "singularName": "hero",
+    "pluralName": "heroes",
+    "displayName": "Hero"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Common": {
+      "type": "component",
+      "component": "cms-content.common-fields",
+      "repeatable": true
+    }
+  }
+}
