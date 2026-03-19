@@ -14,7 +14,7 @@
     "Common": {
       "type": "component",
       "component": "cms-content.common-fields",
-      "repeatable": true
+      "repeatable": false
     }
   }
 }

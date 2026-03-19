@@ -478,7 +478,7 @@ export interface ApiHeroHero extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    Common: Schema.Attribute.Component<'cms-content.common-fields', true>;
+    Common: Schema.Attribute.Component<'cms-content.common-fields', false>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
