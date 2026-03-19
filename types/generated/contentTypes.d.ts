@@ -467,7 +467,7 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
   };
 }
 
-export interface ApiHeroHero extends Struct.CollectionTypeSchema {
+export interface ApiHeroHero extends Struct.SingleTypeSchema {
   collectionName: 'heroes';
   info: {
     displayName: 'Hero';
