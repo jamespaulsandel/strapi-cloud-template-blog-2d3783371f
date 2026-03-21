@@ -15,6 +15,14 @@ export interface CmsContentAddress extends Struct.ComponentSchema {
   };
 }
 
+export interface CmsContentAvailability extends Struct.ComponentSchema {
+  collectionName: 'components_cms_content_availabilities';
+  info: {
+    displayName: 'Availability';
+  };
+  attributes: {};
+}
+
 export interface CmsContentCommonFields extends Struct.ComponentSchema {
   collectionName: 'components_cms_content_common_fields';
   info: {
@@ -55,6 +63,7 @@ declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
       'cms-content.address': CmsContentAddress;
+      'cms-content.availability': CmsContentAvailability;
       'cms-content.common-fields': CmsContentCommonFields;
       'cms-content.list': CmsContentList;
       'cms-content.organization': CmsContentOrganization;

@@ -478,6 +478,10 @@ export interface ApiHeroHero extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    Availability: Schema.Attribute.Enumeration<
+      ['Currently Available for New Roles', 'Currently Unavailable']
+    > &
+      Schema.Attribute.DefaultTo<'Currently Available for New Roles'>;
     Common: Schema.Attribute.Component<'cms-content.common-fields', false>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &

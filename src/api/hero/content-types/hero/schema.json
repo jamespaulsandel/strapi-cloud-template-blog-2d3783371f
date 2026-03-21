@@ -15,6 +15,14 @@
       "type": "component",
       "component": "cms-content.common-fields",
       "repeatable": false
+    },
+    "Availability": {
+      "type": "enumeration",
+      "default": "Currently Available for New Roles",
+      "enum": [
+        "Currently Available for New Roles",
+        "Currently Unavailable"
+      ]
     }
   }
 }
