@@ -59,6 +59,17 @@ export interface CmsContentOrganization extends Struct.ComponentSchema {
   };
 }
 
+export interface CmsContentWysiwyg extends Struct.ComponentSchema {
+  collectionName: 'components_cms_content_wysiwygs';
+  info: {
+    displayName: 'Wysiwyg';
+    icon: 'code';
+  };
+  attributes: {
+    WYSIWYG: Schema.Attribute.Blocks;
+  };
+}
+
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
@@ -67,6 +78,7 @@ declare module '@strapi/strapi' {
       'cms-content.common-fields': CmsContentCommonFields;
       'cms-content.list': CmsContentList;
       'cms-content.organization': CmsContentOrganization;
+      'cms-content.wysiwyg': CmsContentWysiwyg;
     }
   }
 }
