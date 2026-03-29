@@ -14,7 +14,11 @@
     "Body": {
       "type": "dynamiczone",
       "components": [
-        "cms-content.wysiwyg"
+        "cms-content.list",
+        "cms-content.common-fields",
+        "cms-content.organization",
+        "cms-content.availability",
+        "cms-content.address"
       ]
     }
   }

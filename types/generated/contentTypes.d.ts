@@ -507,7 +507,15 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    Body: Schema.Attribute.DynamicZone<['cms-content.wysiwyg']>;
+    Body: Schema.Attribute.DynamicZone<
+      [
+        'cms-content.list',
+        'cms-content.common-fields',
+        'cms-content.organization',
+        'cms-content.availability',
+        'cms-content.address',
+      ]
+    >;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
