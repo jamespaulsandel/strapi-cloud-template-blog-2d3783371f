@@ -4,6 +4,14 @@
     "displayName": "Availability"
   },
   "options": {},
-  "attributes": {},
+  "attributes": {
+    "Availability": {
+      "type": "enumeration",
+      "enum": [
+        "Currently Available for New Roles",
+        "Currently Unavailable"
+      ]
+    }
+  },
   "config": {}
 }

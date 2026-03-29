@@ -20,7 +20,11 @@ export interface CmsContentAvailability extends Struct.ComponentSchema {
   info: {
     displayName: 'Availability';
   };
-  attributes: {};
+  attributes: {
+    Availability: Schema.Attribute.Enumeration<
+      ['Currently Available for New Roles', 'Currently Unavailable']
+    >;
+  };
 }
 
 export interface CmsContentCommonFields extends Struct.ComponentSchema {
