@@ -514,6 +514,7 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
         'cms-content.organization',
         'cms-content.availability',
         'cms-content.address',
+        'cms-content.hero',
       ]
     >;
     createdAt: Schema.Attribute.DateTime;

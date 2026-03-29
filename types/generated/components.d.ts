@@ -35,6 +35,19 @@ export interface CmsContentCommonFields extends Struct.ComponentSchema {
   };
 }
 
+export interface CmsContentHero extends Struct.ComponentSchema {
+  collectionName: 'components_cms_content_heroes';
+  info: {
+    displayName: 'Hero';
+  };
+  attributes: {
+    Availability: Schema.Attribute.Component<'cms-content.availability', false>;
+    Description: Schema.Attribute.Text;
+    Image: Schema.Attribute.Media<'images'>;
+    Title: Schema.Attribute.String;
+  };
+}
+
 export interface CmsContentList extends Struct.ComponentSchema {
   collectionName: 'components_cms_content_lists';
   info: {
@@ -63,6 +76,7 @@ declare module '@strapi/strapi' {
       'cms-content.address': CmsContentAddress;
       'cms-content.availability': CmsContentAvailability;
       'cms-content.common-fields': CmsContentCommonFields;
+      'cms-content.hero': CmsContentHero;
       'cms-content.list': CmsContentList;
       'cms-content.organization': CmsContentOrganization;
     }

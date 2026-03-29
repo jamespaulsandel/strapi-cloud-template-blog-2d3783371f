@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_cms_content_heroes",
+  "info": {
+    "displayName": "Hero"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Availability": {
+      "type": "component",
+      "component": "cms-content.availability",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

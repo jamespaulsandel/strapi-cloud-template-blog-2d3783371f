@@ -18,7 +18,8 @@
         "cms-content.common-fields",
         "cms-content.organization",
         "cms-content.availability",
-        "cms-content.address"
+        "cms-content.address",
+        "cms-content.hero"
       ]
     }
   }
